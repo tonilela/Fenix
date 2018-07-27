@@ -10,7 +10,7 @@ class profile extends Model
 
     public function profile()
     {
-        return $this->hasOne('App\profile');
+        return $this->belongsTo(User::class, 'user_id', 'id');
 
     }
     //
